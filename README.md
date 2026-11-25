@@ -1,14 +1,14 @@
 # Calorie Calculator
 
-I built this Java command-line project in 2023 for my Introduction to Programming course. It was an early exercise in using loops, switch statements, console input, and separate classes for the interface and program logic.
+I built this Java command-line calorie calculator in 2023 for my Introduction to Programming course.
 
-The program displays an ASCII-art title and an interactive menu. I started a form for entering height, weight, gender, and activity level. Food logging, reviewing entries, and calculating calories were planned features. The personal-data form has input and validation bugs in this snapshot.
+The program lets you enter your personal information, log food and quantities from five built-in food categories, and review or clear your entries. It calculates BMI, basal metabolic rate (BMR), and estimated total daily energy expenditure (TDEE), then shows how your logged calories compare with your estimated daily needs. Entries are kept in memory for the current session.
 
 ## Run locally
 
 From the repository root, with a JDK installed:
 
 ```sh
-javac -d out src/calcal_project/Main.java src/calcal_project/TextGui.java
-java -cp out calcal_project.Main
+javac -encoding UTF-8 -d out src/*.java src/fooddata/*.java
+java -cp out Main
 ```
